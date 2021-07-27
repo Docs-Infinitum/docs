@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Source+Sans+Pro&display=swap');
+
+html {
+    background-color: #121212;
+    color: #fff;
+}
+
+div.main-body {
+    display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+}
+
+.navbar {
+    grid-area: navbar;
+    position: fixed;
+}
+
+.navbar a {
+    display: block;
+    padding: 3px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+#main-doc {
+    grid-area: mainContent;
+}
+
+header {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
